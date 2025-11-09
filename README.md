@@ -17,7 +17,7 @@
 
 | Qty | Component                        |
 |:---:|----------------------------------|
-| 16  | 10KΩ Axial Resistor - ¼ watt     |
+| 16  | 10KΩ Axial Resistors - ¼ watt    |
 | 1   | 74LS245 20pin DIP                |
 | 2   | 74LS157 16pin DIP                |
 | 1   | 74LS151 16pin DIP                |
@@ -25,9 +25,8 @@
 | 5   | 100nF Ceramic Capacitors         |
 | 2   | 47uF Electrolytic Capacitors     |
 | 1   | 10uF Electrolytic Capacitor      |
-| 2   | 16pin DIP sockets (optional)     |
-| 1   | 20pin DIP socket (optional)      |
-| 1   | 32pin Wide DIP socket (optional) |
+
+IC sockets optional.
 
 ---
 
@@ -140,4 +139,4 @@ With the XTra-RAM we can provide a total of 640K, as follows:
 
 ## Support Me
 * [My Projects](https://projects.amiga-hardware.com) - Donate on this page
-* [Order the XTra-RAM PCB]()
+* [Order the XTra-RAM PCB](https://www.pcbway.com/project/shareproject/XTra_RAM_512K_RAM_Card_for_XT_PCs_a331a696.html)
