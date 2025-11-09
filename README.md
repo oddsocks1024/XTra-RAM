@@ -1,5 +1,7 @@
 # XTra-RAM
 
+![Xtra-RAM](images/1.jpg)
+
 ## Description
 512K RAM Expansion (8bit ISA) for XT class PCs and earlier with configurable banks
 
