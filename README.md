@@ -25,6 +25,7 @@
 | 5   | 100nF Ceramic Capacitors         |
 | 2   | 47uF Electrolytic Capacitors     |
 | 1   | 10uF Electrolytic Capacitor      |
+| 2   | 8-Pole DIP switches              |
 
 IC sockets optional.
 
