@@ -7,6 +7,11 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "XTra-RAM")
+		(rev "1.0")
+		(company "Oddsocks b5s4")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
