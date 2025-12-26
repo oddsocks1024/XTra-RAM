@@ -36,15 +36,14 @@ To configure the XTra-RAM correctly, it is important to have a basic understandi
 It is also important to understand how much RAM you currently have installed, including on expansion cards.
 
 The XTra-RAM contains 512K which is split into 8 x 64K memory banks. Each bank can either be mapped to a low address, a high address or disabled entirely.
-This gives the card the best chance of working with many difference memory configurations.
+This gives the card the best chance of working with many different memory configurations.
 
 **Remember**
 
 * RAM should be mapped contiguously into the address space. If there's a gap in the address space where no RAM is mapped, the PC will see no or less RAM.
-* Never configure a memory bank on the XTra-RAM at both a high and low address. This will cause the same RAM to appear twice in the address space leading to memory corruption.
-* Do not configure a memory bank on the XTra-RAM to be at the same address space as existing memory in the system, including other RAM expansions. This will cause a memory conflict.
-* Be careful if mapping memory blocks into UMA, it requires much diligence than conventional memory and may conflict with your BIOS.
-
+* Never configure a memory bank on the XTra-RAM at both a high and low address. This will cause the same RAM to appear twice in the address space causing memory corruption.
+* Never configure a memory bank on the XTra-RAM to be at the same address space as existing memory in the system, including other RAM expansions. This will cause a memory conflict.
+* Configuring RAM in the UMA area is possible, but is very system specific and you should be careful not to conflict with the BIOS or Video particularly.
 
 ### DIP Switches
 
@@ -62,11 +61,9 @@ This gives the card the best chance of working with many difference memory confi
 
 **NOTE:** Some systems have configuration jumpers on the motherboard which limit the amount of memory the BIOS will detect and this may prevent all or some of the additional memory from being seen. Consult the documentation for your system. 
 
-
 ### Example 1
 
-An IBM 5150, populated with 64K on the motherboard
-With the XTra-RAM we can provide a total of 576K, as follows:
+An IBM 5150, populated with 64K on the motherboard. With the XTra-RAM we can provide a total of 576K, as follows:
 
 * Bank 1 must be configured as High (if it was low, it would conflict with the motherboard memory)
 * Banks 2 - 8 must be configured as Low
@@ -84,7 +81,6 @@ Resulting Memory Map
 | 60000h - 6FFFFh | XTra-RAM Bank 7    | 384K - 448K |
 | 70000h - 7FFFFh | XTra-RAM Bank 8    | 448K - 512K |
 | 80000h - 8FFFFh | XTra-RAM Bank 1    | 512K - 576K |
-
 
 ### Example 2
 
@@ -112,7 +108,6 @@ With the XTra-RAM we can provide a total of 640K, as follows:
 
 * It is possible to configure and use RAM in the UMA area, but this is very system configuration specific.
 
-
 ### Example 3
 
 An XT, populated with 512K on the motherboard.
@@ -136,7 +131,7 @@ With the XTra-RAM we can provide a total of 640K, as follows:
 | 90000h - 8FFFFh | XTra-RAM Bank 2    | 576K - 640K |
 
 
-* It is possible to configure and use RAM in the UMA area, but this is very system configuration specific.
+* It is possible to configure and use RAM in the UMA area, but this is very system specific and you must be careful not to conflict with the BIOS or Video.
 
 ## Support Me
 * [My Projects](https://projects.amiga-hardware.com) - Donate on this page
