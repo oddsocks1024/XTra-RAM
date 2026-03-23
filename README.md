@@ -29,8 +29,6 @@
 
 IC sockets optional.
 
----
-
 ## Usage
 To configure the XTra-RAM correctly, it is important to have a basic understanding of the PC memory map, especially conventional memory.
 It is also important to understand how much RAM you currently have installed, including on expansion cards.
@@ -43,7 +41,7 @@ This gives the card the best chance of working with many different memory config
 * RAM should be mapped contiguously into the address space. If there's a gap in the address space where no RAM is mapped, the PC will see no or less RAM.
 * Never configure a memory bank on the XTra-RAM at both a high and low address. This will cause the same RAM to appear twice in the address space causing memory corruption.
 * Never configure a memory bank on the XTra-RAM to be at the same address space as existing memory in the system, including other RAM expansions. This will cause a memory conflict.
-* Configuring RAM in the UMA area is possible, but is very system specific and you should be careful not to conflict with the BIOS or Video particularly.
+* Configuring RAM in the UMA area is possible, but is very system specific and you should be careful not to conflict with expansions ROM etc.
 
 ### DIP Switches
 
@@ -131,8 +129,10 @@ With the XTra-RAM we can provide a total of 640K, as follows:
 | 90000h - 8FFFFh | XTra-RAM Bank 2    | 576K - 640K |
 
 
-* It is possible to configure and use RAM in the UMA area, but this is very system specific and you must be careful not to conflict with the BIOS or Video.
+* It is possible to configure and use RAM in the UMA area, but this is very system specific.
 
 ## Support Me
+Everything is freely available so you can make your own PCB, however if you would like to support me, please see the following links.
+
 * [My Projects](https://projects.amiga-hardware.com) - Donate on this page
 * [Order the XTra-RAM PCB](https://www.pcbway.com/project/shareproject/XTra_RAM_512K_RAM_Card_for_XT_PCs_a331a696.html)
